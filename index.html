@@ -22,7 +22,7 @@
             background-color: #f4f6f9;
             color: var(--dark);
             line-height: 1.6;
-            padding-bottom: 90px;
+            padding-bottom: 110px;
         }
         .header-text {
             background: linear-gradient(135deg, #112d4e 0%, #3f72af 100%);
@@ -168,22 +168,25 @@
             width: 100%;
             background: white;
             border-top: 1px solid #ddd;
-            padding: 12px 15px;
+            padding: 10px;
             display: flex;
-            gap: 10px;
+            gap: 8px;
             box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
             z-index: 1000;
         }
         .btn {
             flex: 1;
-            padding: 12px;
+            padding: 10px 5px;
             border: none;
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: 0.88rem;
             font-weight: bold;
             text-align: center;
             text-decoration: none;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .btn-danger {
             background-color: var(--primary);
@@ -191,6 +194,10 @@
         }
         .btn-whatsapp {
             background-color: #25D366;
+            color: white;
+        }
+        .btn-proxy {
+            background-color: #3f72af;
             color: white;
         }
     </style>
@@ -208,15 +215,56 @@
 
     <div class="container">
 
-        <!-- 拆解 2900 萬陪跑方案陷阱 -->
+        <!-- 1. 數據說話 -->
+        <div class="card">
+            <h2>📊 數據說話：外牆缺損僅 0.76%，何需數千萬全搭棚？</h2>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li style="margin-bottom: 8px;"><strong>缺損極低：</strong> 根據物管提交的外牆紅外線檢測報告，全屋苑外牆缺損面積<strong>僅佔總面積 0.76%</strong>。</li>
+                <li><strong>大白象工程：</strong> 如此微小的局部問題，完全可以用「按需局部搭棚修復」處理！物管與法團卻要全體業主夾數千萬全屋苑搭大棚？這完全是大白象工程！</li>
+            </ul>
+        </div>
+
+        <!-- 2. 揭穿陷阱 -->
         <div class="card" style="border: 2px solid var(--primary);">
-            <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🔍 揭穿報價單真相：2,900萬只係「陪跑方案」？</h2>
-            <p>請各位業主仔細查閱官方工程估價單，方案一（$2,894 萬）根本係精心設計嘅<strong>「陪跑方案」</strong>——故意做到「又貴又殘」，硬銷逼大家選更天價嘅方案二同三：</p>
+            <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🔍 揭穿陷阱：方案一根本係「陪跑局」！實質每戶需夾 8-10 萬，還未計無底洞追加撥款！</h2>
+            <p>請各位業主仔細看看官方工程估價單！大家心裡明白，一般業主夾錢做大維修，無非都希望外牆能清洗重刷、煥然一新。但顧問公司提出的方案一（$2,894 萬），根本是精心設計的<strong>「陪跑套路」</strong>——故意做成一個「花幾千萬卻連牆都不洗（不包外牆清洗與油漆）」的極端方案，營造出選方案一等於白花錢的錯覺，<strong>逼使大家只能被迫選擇費用更天價的方案二（$4,770萬）或方案三（$5,147萬）！</strong></p>
             
-            <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
-                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」同「外牆油漆」都<strong>完全不包 (X)</strong>，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>！</li>
-                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267 萬)」加「保險與雜項 ($214 萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！</li>
-                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！為了修 300 萬嘅牆，竟要全體業主花近 3,000 萬去搭大棚？</li>
+            <h3 style="margin-top: 15px; font-size: 1.05rem; color: #112d4e;">💰 方案費用與業主實質負擔對比：</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>方案</th>
+                        <th>總工程費用</th>
+                        <th>扣資助後全屋苑自負額</th>
+                        <th>業主平均分攤 (進位至萬)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>方案 1 (陪跑/不包洗牆油漆)</strong></td>
+                        <td>$2,894 萬</td>
+                        <td>約 $2,100 萬</td>
+                        <td>約 $5 萬 (根本不會選)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>方案 2 (全面)</strong></td>
+                        <td>$4,770 萬</td>
+                        <td>約 $3,900 萬</td>
+                        <td class="highlight">約 $9 萬</td>
+                    </tr>
+                    <tr>
+                        <td><strong>方案 3 (提升)</strong></td>
+                        <td>$5,147 萬</td>
+                        <td>約 $4,300 萬</td>
+                        <td class="highlight">約 $10 萬</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.85rem; color: #666;">* 信和資助 1,000 萬扣除獨立屋分賬與顧問費後，實際剩餘可用 Funding 僅剩約 800 萬。</p>
+
+            <ul style="margin-left: 20px; margin-top: 12px;">
+                <li style="margin-bottom: 8px;"><strong>天價費用去咗邊？</strong> 光是「棚架工程 ($1,267 萬)」加「保險與雜項 ($214 萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！而真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！</li>
+                <li><strong>⚠️ 致命風險：這還只是初步報價！</strong> 按照方案二與方案三，每戶初步已經要夾 <strong>約 8 萬至 10 萬元</strong>！這還完全未計算工程展開後、做到一半又以各種藉口「天價追加撥款 / 逼業主再加錢」的無底洞風險！<strong>宏福苑大維修正是工程不停延期、天價追加撥款的慘痛前車之鑑！</strong></li>
             </ul>
 
             <div class="pdf-link-box">
@@ -225,34 +273,26 @@
             </div>
         </div>
 
-        <!-- 數據與精準維修 -->
-        <div class="card">
-            <h2>📊 數據說話：外牆缺損僅 0.76%，何需數千萬全搭棚？</h2>
-            <p>根據屋苑外牆紅外線檢測報告：</p>
-            <p style="font-size: 1.1rem; font-weight: bold; color: #112d4e; margin: 10px 0;">全屋苑缺損面積僅佔總面積 0.76%！全部屬於一般性歲月微細滲漏與磚縫老化！</p>
-            <p>0.76% 的局部小問題，完全可以用<strong>「按需局部搭棚 / 標靶式精準修復」</strong>處理，物管與法團卻要全體業主夾數千萬全屋苑搭大棚？這完全是大白象工程！</p>
-        </div>
-
-        <!-- 破除升值迷思：大埔真實屋苑案例 -->
+        <!-- 3. 破除迷思 -->
         <div class="card" style="border-left: 5px solid #3f72af;">
-            <h2>💡 破除迷思：「外牆重刷樓價就會升？」看大埔真實例子！</h2>
-            <p>有部分業主以為重刷外牆美化後，樓價就會大幅升值，這完全是美麗的誤會：</p>
+            <h2>💡 破除迷思：「外牆重刷樓價就會爆升？」睇睇大埔真實案例！</h2>
+            <p>有部分業主以為重刷外牆美化後，樓價就會大幅升值，這完全是美麗的誤會。我們拿大埔區的真實例子與數據說話：</p>
             <ul style="margin-left: 20px; margin-top: 10px;">
-                <li style="margin-bottom: 8px;"><strong>睇睇大埔同區例子：</strong> 例如<strong>新興花園</strong>與<strong>海寶花園</strong>，大維修重刷外牆後，二手樓價依然跟隨大市波動，<strong>根本沒有出現所謂的「大幅升值」或溢價！</strong></li>
-                <li style="margin-bottom: 8px;"><strong>樓齡差異極大：</strong> 新興與海寶等屋苑樓齡已高達數十年，有法例要求與結構安全上的迫切性不得不做大維修。</li>
-                <li><strong>天賦海灣根本無需要：</strong> 我們天賦海灣<strong>樓齡只有十幾年，保養良好，外牆缺損僅 0.76%</strong>，根本完全沒有迫切性動用數千萬元去全屋苑搭棚重刷！</li>
+                <li style="margin-bottom: 8px;"><strong>大埔海寶花園（歷經圍標爭議，樓價未見升值）：</strong> 曾因大判追薪及涉嫌圍標風波備受關注。大維修工程主要在於解決樓宇老化問題而非推高投資回報，工程完成後成交呎價跟隨大市調整（現時平均實用呎價約在 $11,000 至 $11,500 水平），<strong>並未直接帶來顯著的樓價「升值」</strong>。</li>
+                <li style="margin-bottom: 8px;"><strong>大埔新興花園（拆棚後造價平穩，僅具保值功能）：</strong> 大維修及拆除外牆棚網後，近期成交造價表現平穩（折合實用呎價約在 $10,000 水平）。整體屋苑僅屬長遠改善外觀與結構安全而發揮「保值」作用，<strong>絕無出現顯著的爆發性升值</strong>。</li>
+                <li><strong>天賦海灣樓齡僅十幾年，根本無迫切性：</strong> 海寶與新興樓齡高達數十年，有迫切的結構老化與安全問題不得不做。反觀天賦海灣<strong>樓齡僅十幾年，外牆缺損更只有 0.76%</strong>！夾幾千萬元去搭大棚重刷外牆，既換不到樓價爆升，反而要承受圍標爛尾與工程追加撥款的巨大風險！</li>
             </ul>
         </div>
 
-        <!-- 精簡版：工程公司黑暗背景區塊（按鈕跳轉至 investigation.html） -->
+        <!-- 4. 極度黑暗 -->
         <div class="dark-box">
-            <h2>⚠️ 告急警號：慎防欠薪堵路與圍網黑幕！</h2>
-            <p>天賦海灣過往已有承辦商欠薪 4 個月導致「工人靜坐瞓地擋車路」前科！而本次參與招標的工程公司/顧問，背後更涉嫌與廉署及競委會調查的「宏福苑大維修圍標集團」及影子關聯網有所勾結。數千萬工程一旦批出，全體業主隨時面臨工程爛尾、天價追加撥款與資產暴跌的悲劇！</p>
+            <h2>⚠️ 極度黑暗：招標工程公司深涉宏福苑圍標網絡，運作極度黑幕！</h2>
+            <p>本次參與我們天賦海灣大維修招標的工程公司/顧問，背後網絡被揭發與廉政公署及競委會立案調查的「宏福苑大維修圍標集團」有著千絲萬縷的黑暗勾結！該網絡運作圍標手段極度黑暗，操控影子公司合謀定價、過度估價及故意拖延工程，一旦讓其染指天賦海灣數千萬元工程，全體業主隨時陷入工程爛尾與天價追加撥款的噩夢！</p>
             
-            <a href="investigation.html" class="btn-link-out">⚠️ 點此開啟專頁：查看工程公司黑暗控訴與新聞紀錄 →</a>
+            <a href="investigation.html" class="btn-link-out">⚠️ 點此開啟專頁：查看工程公司黑暗圍標背景與新聞紀錄 →</a>
         </div>
 
-        <!-- 一旦開工的惡夢 -->
+        <!-- 5. 四大惡夢 -->
         <div class="card">
             <h2>⚠️ 一旦搭棚開工，全體業主陷入四大惡夢</h2>
             
@@ -276,50 +316,14 @@
             </div>
         </div>
 
-        <!-- 三個方案對比 -->
-        <div class="card">
-            <h2>💰 三個方案，全部都要全體業主大出血</h2>
-            <table class="price-table">
-                <thead>
-                    <tr>
-                        <th>方案</th>
-                        <th>總工程費用</th>
-                        <th>扣資助後全屋苑自負額</th>
-                        <th>業主平均分攤 (進位至萬)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>方案 1 (陪跑)</strong></td>
-                        <td>$2,894 萬</td>
-                        <td>約 $2,100 萬</td>
-                        <td class="highlight">約 $5 萬</td>
-                    </tr>
-                    <tr>
-                        <td><strong>方案 2 (全面)</strong></td>
-                        <td>$4,770 萬</td>
-                        <td>約 $3,900 萬</td>
-                        <td class="highlight">約 $9 萬</td>
-                    </tr>
-                    <tr>
-                        <td><strong>方案 3 (提升)</strong></td>
-                        <td>$5,147 萬</td>
-                        <td>約 $4,300 萬</td>
-                        <td class="highlight">約 $10 萬</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="font-size: 0.85rem; color: #666;">* 信和資助 1,000 萬扣除獨立屋分賬與顧問費後，實際剩餘可用 Funding 僅剩約 800 萬。</p>
-        </div>
-
-        <!-- 明確立場 -->
+        <!-- 6. 我們的立場 -->
         <div class="card" style="background-color: #fff9f9; border: 2px solid var(--primary);">
             <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🛑 我們的立場：三個方案，全數否決！</h2>
             <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">相信各位業主都有獨立思考能力！三個方案全部都不好，請全部投【反對票】！</p>
             <p>只有全數否決這三個不合理方案，才能逼使法團與物管重新檢討，改為提出真正合理、省錢、高效的「按需局部修復」方案！</p>
         </div>
 
-        <!-- 行動指南 -->
+        <!-- 7. 行動指南與授權書預留 -->
         <div class="card">
             <h2>🗳️ 告急！我們最少需要 60 戶/業權份數投反對票</h2>
             <p>漏水戶（約 40 戶）極大機會投贊成票以求有人夾錢。我們必須集結至少 60 戶（或靠大單位業權份數）投下反對票，才能成功護盤！</p>
@@ -328,17 +332,31 @@
                 <strong>業主現在需要做的事：</strong>
                 <ol style="margin-left: 20px; margin-top: 8px;">
                     <li><strong>9月15日親身出席：</strong> 親自到場投下【全反對票】。</li>
-                    <li><strong>簽署授權票：</strong> 若當天無法出席，<strong>切勿交空白授權書給管理處或法團主席</strong>！請即刻簽署「指定反對授權書」，交給信任的鄰居代表投票。</li>
+                    <li><strong>簽署授權票：</strong> 若當天無法出席，<strong>切勿交空白授權書給管理處或法團主席</strong>！請即刻下載並簽署「指定反對授權書」，交給信任的反對代表或鄰居。</li>
                 </ol>
             </div>
+
+            <!-- 授權書預留下載區塊 -->
+            <div class="pdf-link-box" style="margin-top: 20px; background-color: #fff8e1; border-color: #ffa000;">
+                📥 <strong>【未能出席業主必備】下載 EGM 指定反對授權書：</strong><br>
+                <a href="#" class="pdf-link-btn" style="background-color: #ffa000;" target="_blank">📥 點此下載「反對授權書」PDF</a>
+            </div>
+        </div>
+
+        <!-- 8. 後話建議 -->
+        <div class="card" style="background-color: #f0f7ff; border: 2px solid #3f72af;">
+            <h2 style="color: #112d4e;">🚀 後話建議：引進「無人機清洗外牆」，省錢又高效！</h2>
+            <p>如果業主們希望美化屋苑外觀，我們**根本不需要花幾千萬元去搭大棚**！</p>
+            <p style="margin-top: 8px;">同屬<strong>信和管理</strong>的現代化屋苑（例如觀塘凱滙等），早已引進並採用<strong>「無人機高空清洗外牆」</strong>新科技！無人機清洗具有極高效率、成本低廉、不需搭棚、不影響業主採光與隱私等優點。我們應要求管理處與法團積極考慮此類新科技方案，用最合理的預算達到煥然一新的效果！</p>
         </div>
 
     </div>
 
     <!-- 底部固定按鈕 -->
     <div class="sticky-footer">
-        <a href="https://wa.me/?text=🚨%20天賦海灣1期業主注意！2,900萬居然只係陪跑方案？9.15%20EGM%20請全體業主投反對票！估價單真相：%20" class="btn btn-whatsapp" target="_blank">轉發 WhatsApp</a>
-        <a href="https://drive.google.com/file/d/1ay8J7dG-Myw5RgGYlTmW2-gLx0sQJNNz/view?usp=drivesdk" class="btn btn-danger" target="_blank">查看官方估價單 PDF</a>
+        <a href="https://wa.me/?text=🚨%20天賦海灣1期業主注意！2,900萬居然只係陪跑方案？9.15%20EGM%20請全體業主投反對票！詳情：%20" class="btn btn-whatsapp" target="_blank">轉發 WhatsApp</a>
+        <a href="#" class="btn btn-proxy" target="_blank">📥 下載授權書</a>
+        <a href="https://drive.google.com/file/d/1ay8J7dG-Myw5RgGYlTmW2-gLx0sQJNNz/view?usp=drivesdk" class="btn btn-danger" target="_blank">估價單 PDF</a>
     </div>
 
 </body>
