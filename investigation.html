@@ -55,37 +55,46 @@
             font-size: 1.3rem;
             margin-bottom: 12px;
         }
-        .news-img {
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid #444;
-            margin: 15px 0;
-        }
         .news-list {
             list-style: none;
             margin-top: 15px;
         }
-        .news-list li {
+        .news-item {
             background: #282828;
-            margin-bottom: 12px;
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #64b5f6;
+            margin-bottom: 15px;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 5px solid #64b5f6;
+            transition: transform 0.2s;
         }
-        .news-list a {
+        .news-item:hover {
+            background: #333;
+        }
+        .news-tag {
+            display: inline-block;
+            background: #3f72af;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .news-item a {
             color: #64b5f6;
             text-decoration: none;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             font-weight: bold;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
-        .news-list a:hover {
+        .news-item a:hover {
             text-decoration: underline;
         }
         .news-desc {
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             color: #ccc;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -100,8 +109,6 @@
             <h2>🚨 控訴一：前科累累！過往欠薪引致工人靜坐堵路</h2>
             <p>天賦海灣周邊及過往工程早已出現過承辦商極度不負責任的前科！承辦商欠薪超過 4 個月，引致工人直接在屋苑門口瞓地靜坐、阻擋車路！</p>
             <p style="margin-top: 8px; color: #ff8a80; font-weight: bold;">一旦把數千萬元大維修工程交給財政混亂的承建商，全體業主隨時要面對工程半途爛尾、被追討欠薪、甚至屋苑治安與形象暴跌的災難！</p>
-            
-            <img src="https://hk01-res.flixcart.com/image/1000/1000/now/2026/04/10/欠薪.jpg" alt="天賦海灣工人欠薪靜坐" class="news-img" onerror="this.src='https://i.imgur.com/8QZ7A1W.jpg';">
         </div>
 
         <div class="alert-card">
@@ -111,36 +118,44 @@
             <p style="margin-top: 10px; color: #ffeb3b; font-weight: bold;">我們花費數千萬買入天賦海灣，絕不能讓宏福苑的圍標悲劇在我們的家園重演！</p>
         </div>
 
-        <h2 style="color: #fff; margin-bottom: 15px;">📰 媒體調查報道與新聞連結全紀錄：</h2>
+        <h2 style="color: #fff; margin-bottom: 15px;">📰 媒體調查報道與新聞預覽紀錄（點擊標題看全文）：</h2>
 
         <ul class="news-list">
-            <li>
+            <li class="news-item">
+                <span class="news-tag">集誌社 獨家</span>
                 <a href="https://thecollectivehk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%9C%8D%E6%A8%99%EF%BD%9C%E7%AB%B6%E5%A7%94%E6%9C%83%E7%A0%B4%E5%9C%8D%E6%A8%99%E9%9B%86%E5%9C%98%E3%80%80%E6%B6%89-11-%E5%B1%8B%E8%8B%91%E7%AD%89-7-%E5%84%84%E5%B7%A5/" target="_blank">【集誌社】競委會破圍標集團 涉11屋苑7億工程 查紀錄涉案公司入標宏福苑殺入五強</a>
-                <div class="news-desc">揭發執法機構打破橫跨多個屋苑的龐大圍標網絡細節。</div>
+                <div class="news-desc">🔍 關鍵預覽：競委會出動打擊橫跨 11 個屋苑的龐大圍標網絡，發現影子關聯公司互相掩護入圍各大屋苑招標決選。</div>
             </li>
-            <li>
-                <a href="https://pulsehknews.com/20251231investigation/" target="_blank">【追光者 Pulse】宏福苑大維修調查：宏業涉圍標證據曝光 九承建商獲薦入圍揭影子關聯網</a>
-                <div class="news-desc">深度剖析影子承建商如何互相掩護入圍招標過程。</div>
+            
+            <li class="news-item">
+                <span class="news-tag">追光者 Pulse</span>
+                <a href="https://pulsehknews.com/20251231investigation/" target="_blank">【追光者】宏福苑大維修調查：宏業涉圍標證據曝光 九承建商獲薦入圍揭影子關聯網</a>
+                <div class="news-desc">🔍 關鍵預覽：深度剖析工程顧問公司如何透過推薦名單，將多間互相有利益關聯的「影子承建商」打包送入入圍名單。</div>
             </li>
-            <li>
+
+            <li class="news-item">
+                <span class="news-tag">文匯報 正式控告</span>
                 <a href="https://www.wenweipo.com/a/202603/26/AP69c44aede4b0b49ad1b3f204.html" target="_blank">【文匯報】競委會控告12人集團式圍標 涉宏福苑等11屋苑共7億工程費</a>
-                <div class="news-desc">執法部門正式提起控告，揭露涉案金額與參與人員規模。</div>
+                <div class="news-desc">🔍 關鍵預覽：執法機構正式入稟控告 12 名涉案核心人物，證實圍標集團企圖操控及分贓數億元大維修工程費。</div>
             </li>
-            <li>
+
+            <li class="news-item">
+                <span class="news-tag">法庭線 刑事清盤</span>
                 <a href="https://thewitnesshk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%A4%A7%E7%81%AB%E5%A4%A7%E7%B6%AD%E4%BF%AE%E6%89%BF%E5%BB%BA%E5%95%86%E5%AE%8F%E6%A5%AD%E8%A2%AB%E5%85%A5%E7%A8%9F%E5%91%88%E8%AB%8B%E6%B8%85%E7%9B%A4-%E6%8E%92%E6%9C%9F9/" target="_blank">【法庭線】宏福苑大維修承建商宏業被控誤殺及串謀詐騙 遭入稟呈請清盤</a>
-                <div class="news-desc">涉及維修公司法庭呈請清盤及串謀詐騙等刑事控罪報道。</div>
+                <div class="news-desc">🔍 關鍵預覽：涉及維修工程之主要承建商遭法庭呈請清盤，相關負責人被控串謀詐騙等重罪。</div>
             </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=ETHuq5pFbKo" target="_blank">【綠豆 Green Bean】YouTube 深度調查：168死背後的圍標網絡——承建商與顧問公司全面交織</a>
-                <div class="news-desc">影音專題完整拆解承建商與顧問公司之間的利益交織關係。</div>
+
+            <li class="news-item">
+                <span class="news-tag">綠豆 YouTube</span>
+                <a href="https://www.youtube.com/watch?v=ETHuq5pFbKo" target="_blank">【綠豆】YouTube 深度調查影片：168死背後的圍標網絡——承建商與顧問公司全面交織</a>
+                <div class="news-desc">🔍 關鍵預覽：精彩影音調查專題，以清晰圖表拆解顧問公司與工程承建商之間的幕後利益交織鏈條。</div>
             </li>
         </ul>
 
-        <div style="text-align: center; margin-top: 30px;">
+        <div style="text-align: center; margin-top: 35px;">
             <a href="index.html" class="back-btn" style="background: var(--primary); padding: 12px 24px; font-size: 1.1rem;">← 返回主頁投【反對票】</a>
         </div>
     </div>
 
 </body>
 </html>
- 
