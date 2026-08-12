@@ -105,6 +105,39 @@
             font-size: 1.1rem;
             margin-bottom: 8px;
         }
+        .dark-box {
+            background-color: #1a1a1a;
+            color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 6px solid #d9534f;
+        }
+        .dark-box h2 {
+            color: #ffeb3b;
+            border-bottom: 2px solid #d9534f;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        .news-link-list {
+            list-style: none;
+            margin-top: 12px;
+        }
+        .news-link-list li {
+            margin-bottom: 10px;
+            background: #2b2b2b;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .news-link-list a {
+            color: #64b5f6;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .news-link-list a:hover {
+            text-decoration: underline;
+        }
         .pdf-link-box {
             background-color: #f0f7ff;
             border: 2px dashed #3f72af;
@@ -122,9 +155,6 @@
             text-decoration: none;
             font-weight: bold;
             margin-top: 10px;
-        }
-        .pdf-link-btn:hover {
-            background-color: #112d4e;
         }
         .reason-list {
             list-style: none;
@@ -196,15 +226,41 @@
 
     <div class="container">
 
+        <!-- 專區：宏福苑黑幕與工程公司關聯揭露 -->
+        <div class="dark-box">
+            <h2>⚠️ 警告：工程公司背景極度黑暗！切勿讓宏福苑悲劇在天賦海灣重演！</h2>
+            <p>各位業主請警惕！參與我們屋苑本次大維修招標的工程公司/顧問，背後正正涉嫌與引發全港震怒的<strong>「宏福苑大維修圍標集團」</strong>及影子關聯網絡有著深厚勾結！</p>
+            <p style="margin-top: 10px; color: #ff8a80;"><strong>競委會與廉政公署已證實：</strong> 該圍標集團以主腦操控多間「影子承建商」角色扮演、互相圍標，橫跨 11 個屋苑、企圖染指 7 億元工程費！黑幕手段包括合謀定價、過度估價、故意拖延工程及使用次等物料！</p>
+            
+            <p style="margin-top: 15px; font-weight: bold; color: #ffeb3b;">📄 宏福苑圍標黑幕新聞及調查報道全紀錄（點擊閱讀真相）：</p>
+            <ul class="news-link-list">
+                <li>
+                    🔗 <a href="https://thecollectivehk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%9C%8D%E6%A8%99%EF%BD%9C%E7%AB%B6%E5%A7%94%E6%9C%83%E7%A0%B4%E5%9C%8D%E6%A8%99%E9%9B%86%E5%9C%98%E3%80%80%E6%B6%89-11-%E5%B1%8B%E8%8B%91%E7%AD%89-7-%E5%84%84%E5%B7%A5/" target="_blank">【集誌社】競委會破圍標集團 涉11屋苑7億工程 查紀錄涉案公司入標宏福苑殺入五強</a>
+                </li>
+                <li>
+                    🔗 <a href="https://pulsehknews.com/20251231investigation/" target="_blank">【追光者】宏福苑大維修調查：宏業涉圍標證據曝光 九承建商獲薦入圍揭影子關聯網</a>
+                </li>
+                <li>
+                    🔗 <a href="https://www.wenweipo.com/a/202603/26/AP69c44aede4b0b49ad1b3f204.html" target="_blank">【文匯報】競委會控告12人集團式圍標 涉宏福苑等11屋苑共7億工程費</a>
+                </li>
+                <li>
+                    🔗 <a href="https://thewitnesshk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%A4%A7%E7%81%AB%E5%A4%A7%E7%B6%AD%E4%BF%AE%E6%89%BF%E5%BB%BA%E5%95%86%E5%AE%8F%E6%A5%AD%E8%A2%AB%E5%85%A5%E7%A8%9F%E5%91%88%E8%AB%8B%E6%B8%85%E7%9B%A4-%E6%8E%92%E6%9C%9F9/" target="_blank">【法庭線】宏福苑大維修承建商宏業被控誤殺及串謀詐騙 遭入稟呈請清盤</a>
+                </li>
+                <li>
+                    🔗 <a href="https://www.youtube.com/watch?v=ETHuq5pFbKo" target="_blank">【綠豆】YouTube 深度調查影片：168死背後的圍標網絡——承建商與顧問公司全面交織</a>
+                </li>
+            </ul>
+        </div>
+
         <!-- 拆解 2900 萬報價單陷阱 -->
         <div class="card" style="border: 2px solid var(--primary);">
             <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🔍 揭穿報價單真相：2,900萬居然連牆都不洗？</h2>
             <p>請各位業主仔細查閱官方工程估價單，方案一（$2,894萬）根本是逼大家選更貴方案的「錨定陷阱」：</p>
             
             <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
-                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」及「外牆油漆」都<strong>完全不包 (X)</strong>，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>！</li>
-                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267萬)」加「保險與雜項 ($214萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！</li>
-                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！為了修 300 萬的牆，竟要全體業主花近 3,000 萬去搭棚？</li>
+                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」及「外牆油漆」都<strong>完全不包 (X)</strong>，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>！[cite: 1]</li>
+                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267萬)」加「保險與雜項 ($214萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！[cite: 1]</li>
+                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！[cite: 1]為了修 300 萬的牆，竟要全體業主花近 3,000 萬去搭棚？[cite: 1]</li>
             </ul>
 
             <div class="pdf-link-box">
@@ -221,10 +277,9 @@
             <p>0.76% 的局部小問題，完全可以用「高空吊船」或「局部標靶式修復」精準處理，物管與法團卻要全體業主夾數千萬全屋苑搭棚？這完全是大白象工程！</p>
         </div>
 
-        <!-- 黑暗背景與一旦開工的惡夢 -->
+        <!-- 一旦開工的惡夢 -->
         <div class="card">
-            <h2>⚠️ 慎防宏福苑悲劇重演！一旦搭棚陷入四大惡夢</h2>
-            <p style="color: var(--primary); font-weight: bold; margin-bottom: 10px;">參與競投的工程公司背景極具爭議，甚至與過去引發巨大維修風波的「宏福苑關聯公司」有所牽連！</p>
+            <h2>⚠️ 一旦搭棚開工，全體業主陷入四大惡夢</h2>
             
             <div class="pain-points">
                 <div class="pain-card">
@@ -307,7 +362,7 @@
 
     <!-- 底部固定按鈕 -->
     <div class="sticky-footer">
-        <a href="https://wa.me/?text=🚨%20天賦海灣1期業主注意！2,900萬方案竟然連牆都不洗？9.15%20EGM%20請全體業主投反對票！估價單真相：%20" class="btn btn-whatsapp" target="_blank">轉發 WhatsApp</a>
+        <a href="https://wa.me/?text=🚨%20天賦海灣1期業主注意！工程公司背景竟涉宏福苑圍標網絡？9.15%20EGM%20請全體業主投反對票！新聞與報價單真相：%20" class="btn btn-whatsapp" target="_blank">轉發 WhatsApp</a>
         <a href="https://drive.google.com/file/d/1ay8J7dG-Myw5RgGYlTmW2-gLx0sQJNNz/view?usp=drivesdk" class="btn btn-danger" target="_blank">查看官方估價單 PDF</a>
     </div>
 
