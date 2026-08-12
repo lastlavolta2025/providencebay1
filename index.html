@@ -24,25 +24,25 @@
             line-height: 1.6;
             padding-bottom: 90px;
         }
-        .header {
-            background: linear-gradient(rgba(17, 45, 78, 0.85), rgba(63, 114, 175, 0.9)), url('https://img.ricacorp.com/est/1%E6%9C%9F-phase-%E5%A4%A9%E8%B3%A6%E6%B5%B7%E7%81%A3-bigest-hk-main.jpg');
-            background-size: cover;
-            background-position: center;
+        .header-banner {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+        .header-text {
+            background: linear-gradient(135deg, #112d4e 0%, #3f72af 100%);
             color: white;
             text-align: center;
-            padding: 40px 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            padding: 20px 15px;
         }
-        .header h1 {
-            font-size: 1.9rem;
-            margin-bottom: 8px;
+        .header-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
             color: #ffeb3b;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
         }
-        .header p {
-            font-size: 1.15rem;
+        .header-text p {
+            font-size: 1.1rem;
             opacity: 0.95;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
         .alert-banner {
             background-color: var(--primary);
@@ -126,15 +126,16 @@
             font-size: 1.2rem;
         }
         .btn-link-out {
-            display: inline-block;
+            display: block;
             background-color: #d9534f;
             color: white;
-            padding: 12px 20px;
+            padding: 14px 20px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 12px;
+            margin-top: 15px;
             text-align: center;
+            font-size: 1.05rem;
         }
         .btn-link-out:hover {
             background-color: #c9302c;
@@ -200,7 +201,10 @@
 </head>
 <body>
 
-    <div class="header">
+    <!-- 天賦海灣專屬圖片 Banner -->
+    <img src="https://i.imgur.com/kO1aT5r.jpeg" alt="天賦海灣 Providence Bay" class="header-banner" onerror="this.src='https://i3.ytimg.com/vi/ETHuq5pFbKo/maxresdefault.jpg';">
+
+    <div class="header-text">
         <h1>🚨 天賦海灣1期 9月15日 EGM 告業主書</h1>
         <p>捍衛自身資產與居住權益 ‧ 請全體業主投【反對票】！</p>
     </div>
@@ -217,9 +221,9 @@
             <p>請各位業主仔細查閱官方工程估價單，方案一（$2,894 萬）根本係精心設計嘅<strong>「陪跑方案」</strong>——故意做到「又貴又殘」，硬銷逼大家選更天價嘅方案二同三：</p>
             
             <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
-                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」同「外牆油漆」都<strong>完全不包 (X)</strong>，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>！</li>
-                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267 萬)」加「保險與雜項 ($214 萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！</li>
-                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！為了修 300 萬嘅牆，竟要全體業主花近 3,000 萬去搭大棚？</li>
+                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」同「外牆油漆」都<strong>完全不包 (X)</strong>[cite: 1]，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>[cite: 1]！</li>
+                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267 萬)」[cite: 1] 加「保險與雜項 ($214 萬)」[cite: 1]，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！</li>
+                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>[cite: 1]！為了修 300 萬嘅牆，竟要全體業主花近 3,000 萬去搭大棚[cite: 1]？</li>
             </ul>
 
             <div class="pdf-link-box">
@@ -236,12 +240,12 @@
             <p>0.76% 的局部小問題，完全可以用<strong>「按需局部搭棚 / 標靶式精準修復」</strong>處理，物管與法團卻要全體業主夾數千萬全屋苑搭大棚？這完全是大白象工程！</p>
         </div>
 
-        <!-- 精簡版：工程公司黑暗背景區塊 -->
+        <!-- 精簡版：工程公司黑暗背景區塊（附按鈕前往新頁面） -->
         <div class="dark-box">
             <h2>⚠️ 告急警號：慎防欠薪堵路與圍網黑幕！</h2>
             <p>天賦海灣過往已有承辦商欠薪 4 個月導致「工人靜坐瞓地擋車路」前科！而本次參與招標的工程公司/顧問，背後更涉嫌與廉署及競委會調查的「宏福苑大維修圍標集團」及影子關聯網有所勾結。數千萬工程一旦批出，全體業主隨時面臨工程爛尾、天價追加撥款與資產暴跌的悲劇！</p>
             
-            <a href="https://thecollectivehk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%9C%8D%E6%A8%99%EF%BD%9C%E7%AB%B6%E5%A7%94%E6%9C%83%E7%A0%B4%E5%9C%8D%E6%A8%99%E9%9B%86%E5%9C%98%E3%80%80%E6%B6%89-11-%E5%B1%8B%E8%8B%91%E7%AD%89-7-%E5%84%84%E5%B7%A5/" class="btn-link-out" target="_blank">⚠️ 點此查看宏福苑圍標新聞與黑暗背景紀錄</a>
+            <a href="investigation.html" class="btn-link-out">⚠️ 點此開啟專頁：查看工程公司黑暗控訴與新聞紀錄 →</a>
         </div>
 
         <!-- 一旦開工的惡夢 -->
@@ -268,7 +272,7 @@
             </div>
         </div>
 
-        <!-- 三個方案對比 (已更新為業主平均分攤，萬位進位) -->
+        <!-- 三個方案對比 -->
         <div class="card">
             <h2>💰 三個方案，全部都要全體業主大出血</h2>
             <table class="price-table">
@@ -283,19 +287,19 @@
                 <tbody>
                     <tr>
                         <td><strong>方案 1 (陪跑)</strong></td>
-                        <td>$2,894 萬</td>
+                        <td>$2,894 萬[cite: 1]</td>
                         <td>約 $2,100 萬</td>
                         <td class="highlight">約 $5 萬</td>
                     </tr>
                     <tr>
                         <td><strong>方案 2 (全面)</strong></td>
-                        <td>$4,770 萬</td>
+                        <td>$4,770 萬[cite: 1]</td>
                         <td>約 $3,900 萬</td>
                         <td class="highlight">約 $9 萬</td>
                     </tr>
                     <tr>
                         <td><strong>方案 3 (提升)</strong></td>
-                        <td>$5,147 萬</td>
+                        <td>$5,147 萬[cite: 1]</td>
                         <td>約 $4,300 萬</td>
                         <td class="highlight">約 $10 萬</td>
                     </tr>
