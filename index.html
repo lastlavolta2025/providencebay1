@@ -25,19 +25,24 @@
             padding-bottom: 90px;
         }
         .header {
-            background: linear-gradient(135deg, #112d4e 0%, #3f72af 100%);
+            background: linear-gradient(rgba(17, 45, 78, 0.85), rgba(63, 114, 175, 0.9)), url('https://img.ricacorp.com/est/1%E6%9C%9F-phase-%E5%A4%A9%E8%B3%A6%E6%B5%B7%E7%81%A3-bigest-hk-main.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
-            padding: 30px 15px;
+            padding: 40px 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
         .header h1 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             margin-bottom: 8px;
             color: #ffeb3b;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
         }
         .header p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             opacity: 0.95;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
         .alert-banner {
             background-color: var(--primary);
@@ -118,32 +123,21 @@
             border-bottom: 2px solid #d9534f;
             padding-bottom: 8px;
             margin-bottom: 15px;
+            font-size: 1.2rem;
         }
-        .news-img {
-            width: 100%;
-            max-width: 100%;
-            border-radius: 8px;
-            border: 2px solid #ff8a80;
-            margin: 15px 0;
-        }
-        .news-link-list {
-            list-style: none;
-            margin-top: 12px;
-        }
-        .news-link-list li {
-            margin-bottom: 10px;
-            background: #2b2b2b;
-            padding: 10px;
+        .btn-link-out {
+            display: inline-block;
+            background-color: #d9534f;
+            color: white;
+            padding: 12px 20px;
             border-radius: 6px;
-        }
-        .news-link-list a {
-            color: #64b5f6;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
+            margin-top: 12px;
+            text-align: center;
         }
-        .news-link-list a:hover {
-            text-decoration: underline;
+        .btn-link-out:hover {
+            background-color: #c9302c;
         }
         .pdf-link-box {
             background-color: #f0f7ff;
@@ -217,53 +211,15 @@
 
     <div class="container">
 
-        <!-- 新增：天賦海灣過往欠薪爛尾前科圖片 -->
-        <div class="dark-box">
-            <h2>⚠️ 告急警號：欠薪堵路、工程爛尾隨時在天賦海灣重演！</h2>
-            <p>大家請看看這則突發新聞：<strong>「天賦海灣溋玥工人疑遭欠薪，靜坐瞓地擋車路」</strong>！承辦商欠薪逾 4 個月，導致工人直接在屋苑門口抗議堵路！</p>
-            
-            <img src="https://hk01-res.flixcart.com/image/1000/1000/now/2026/04/10/欠薪.jpg" alt="天賦海灣工人欠薪靜坐" class="news-img" onerror="this.src='https://i.imgur.com/8QZ7A1W.jpg';">
-
-            <p style="margin-top: 10px; color: #ffeb3b; font-weight: bold;">
-                這就是選錯承建商的恐怖後果！數千萬工程一旦批出，若承辦商財政混亂、欠薪爛尾，全體業主不僅要受搭棚折磨，還要面對工人堵路、屋苑形像暴跌的慘狀！
-            </p>
-        </div>
-
-        <!-- 專區：宏福苑黑幕與工程公司關聯揭露 -->
-        <div class="dark-box">
-            <h2>⚠️ 警告：工程公司背景極度黑暗！切勿讓宏福苑悲劇重演！</h2>
-            <p>參與我們屋苑本次大維修招標的工程公司/顧問，背後正正涉嫌與引發全港震怒的<strong>「宏福苑大維修圍標集團」</strong>及影子關聯網絡有著深厚勾結！</p>
-            <p style="margin-top: 10px; color: #ff8a80;"><strong>競委會與廉政公署已證實：</strong> 該圍標集團以主腦操控多間「影子承建商」互相圍標，橫跨 11 個屋苑、企圖染指 7 億元工程費！黑幕手段包括合謀定價、過度估價及故意拖延工程！</p>
-            
-            <p style="margin-top: 15px; font-weight: bold; color: #ffeb3b;">📄 宏福苑圍標黑幕新聞及調查報道全紀錄（點擊閱讀真相）：</p>
-            <ul class="news-link-list">
-                <li>
-                    🔗 <a href="https://thecollectivehk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%9C%8D%E6%A8%99%EF%BD%9C%E7%AB%B6%E5%A7%94%E6%9C%83%E7%A0%B4%E5%9C%8D%E6%A8%99%E9%9B%86%E5%9C%98%E3%80%80%E6%B6%89-11-%E5%B1%8B%E8%8B%91%E7%AD%89-7-%E5%84%84%E5%B7%A5/" target="_blank">【集誌社】競委會破圍標集團 涉11屋苑7億工程 查紀錄涉案公司入標宏福苑殺入五強</a>
-                </li>
-                <li>
-                    🔗 <a href="https://pulsehknews.com/20251231investigation/" target="_blank">【追光者】宏福苑大維修調查：宏業涉圍標證據曝光 九承建商獲薦入圍揭影子關聯網</a>
-                </li>
-                <li>
-                    🔗 <a href="https://www.wenweipo.com/a/202603/26/AP69c44aede4b0b49ad1b3f204.html" target="_blank">【文匯報】競委會控告12人集團式圍標 涉宏福苑等11屋苑共7億工程費</a>
-                </li>
-                <li>
-                    🔗 <a href="https://thewitnesshk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%A4%A7%E7%81%AB%E5%A4%A7%E7%B6%AD%E4%BF%AE%E6%89%BF%E5%BB%BA%E5%95%86%E5%AE%8F%E6%A5%AD%E8%A2%AB%E5%85%A5%E7%A8%9F%E5%91%88%E8%AB%8B%E6%B8%85%E7%9B%A4-%E6%8E%92%E6%9C%9F9/" target="_blank">【法庭線】宏福苑大維修承建商宏業被控誤殺及串謀詐騙 遭入稟呈請清盤</a>
-                </li>
-                <li>
-                    🔗 <a href="https://www.youtube.com/watch?v=ETHuq5pFbKo" target="_blank">【綠豆】YouTube 深度調查影片：168死背後的圍標網絡——承建商與顧問公司全面交織</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- 拆解 2900 萬報價單陷阱 -->
+        <!-- 拆解 2900 萬陪跑方案陷阱 -->
         <div class="card" style="border: 2px solid var(--primary);">
-            <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🔍 揭穿報價單真相：2,900萬居然連牆都不洗？</h2>
-            <p>請各位業主仔細查閱官方工程估價單，方案一（$2,894萬）根本是逼大家選更貴方案的「錨定陷阱」：</p>
+            <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🔍 揭穿報價單真相：2,900萬只係「陪跑方案」？</h2>
+            <p>請各位業主仔細查閱官方工程估價單，方案一（$2,894 萬）根本係精心設計嘅<strong>「陪跑方案」</strong>——故意做到「又貴又殘」，硬銷逼大家選更天價嘅方案二同三：</p>
             
             <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
-                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」及「外牆油漆」都<strong>完全不包 (X)</strong>，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>！[cite: 1]</li>
-                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267萬)」加「保險與雜項 ($214萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！[cite: 1]</li>
-                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！[cite: 1]為了修 300 萬的牆，竟要全體業主花近 3,000 萬去搭棚？[cite: 1]</li>
+                <li><strong>極度荒謬：</strong> 方案一連「外牆清洗」同「外牆油漆」都<strong>完全不包 (X)</strong>，做完外觀依然殘破，官方評分僅 <strong>★ (1顆星)</strong>！</li>
+                <li><strong>費用去咗邊？</strong> 光是「棚架工程 ($1,267 萬)」加「保險與雜項 ($214 萬)」，就白白吞掉 <strong>$1,482 萬</strong>（佔總價逾 51%）！</li>
+                <li><strong>真正的修補費：</strong> 真正的外牆結構修補費（石矢+批盪+飾面）加起來<strong>只有約 318 萬</strong>！為了修 300 萬嘅牆，竟要全體業主花近 3,000 萬去搭大棚？</li>
             </ul>
 
             <div class="pdf-link-box">
@@ -272,12 +228,20 @@
             </div>
         </div>
 
-        <!-- 背景與數據 -->
+        <!-- 數據與精準維修 -->
         <div class="card">
             <h2>📊 數據說話：外牆缺損僅 0.76%，何需數千萬全搭棚？</h2>
             <p>根據屋苑外牆紅外線檢測報告：</p>
             <p style="font-size: 1.1rem; font-weight: bold; color: #112d4e; margin: 10px 0;">全屋苑缺損面積僅佔總面積 0.76%！全部屬於一般性歲月微細滲漏與磚縫老化！</p>
-            <p>0.76% 的局部小問題，完全可以用「高空吊船」或「局部標靶式修復」精準處理，物管與法團卻要全體業主夾數千萬全屋苑搭棚？這完全是大白象工程！</p>
+            <p>0.76% 的局部小問題，完全可以用<strong>「按需局部搭棚 / 標靶式精準修復」</strong>處理，物管與法團卻要全體業主夾數千萬全屋苑搭大棚？這完全是大白象工程！</p>
+        </div>
+
+        <!-- 精簡版：工程公司黑暗背景區塊 -->
+        <div class="dark-box">
+            <h2>⚠️ 告急警號：慎防欠薪堵路與圍網黑幕！</h2>
+            <p>天賦海灣過往已有承辦商欠薪 4 個月導致「工人靜坐瞓地擋車路」前科！而本次參與招標的工程公司/顧問，背後更涉嫌與廉署及競委會調查的「宏福苑大維修圍標集團」及影子關聯網有所勾結。數千萬工程一旦批出，全體業主隨時面臨工程爛尾、天價追加撥款與資產暴跌的悲劇！</p>
+            
+            <a href="https://thecollectivehk.com/%E5%AE%8F%E7%A6%8F%E8%8B%91%E5%9C%8D%E6%A8%99%EF%BD%9C%E7%AB%B6%E5%A7%94%E6%9C%83%E7%A0%B4%E5%9C%8D%E6%A8%99%E9%9B%86%E5%9C%98%E3%80%80%E6%B6%89-11-%E5%B1%8B%E8%8B%91%E7%AD%89-7-%E5%84%84%E5%B7%A5/" class="btn-link-out" target="_blank">⚠️ 點此查看宏福苑圍標新聞與黑暗背景紀錄</a>
         </div>
 
         <!-- 一旦開工的惡夢 -->
@@ -295,7 +259,7 @@
                 </div>
                 <div class="pain-card">
                     <h3>😷 居住受罪</h3>
-                    <p>整年不見天日！拆冷氣機架、封窗戶、室內悶熱、治安與私隱受損！</p>
+                    <p>整年不見天日！拆冷氣機架、全屋封窗、室內悶熱、治安與私隱受損！</p>
                 </div>
                 <div class="pain-card">
                     <h3>⌛ 無限期拖延</h3>
@@ -304,7 +268,7 @@
             </div>
         </div>
 
-        <!-- 三個方案對比 -->
+        <!-- 三個方案對比 (已更新為業主平均分攤，萬位進位) -->
         <div class="card">
             <h2>💰 三個方案，全部都要全體業主大出血</h2>
             <table class="price-table">
@@ -313,27 +277,27 @@
                         <th>方案</th>
                         <th>總工程費用</th>
                         <th>扣資助後全屋苑自負額</th>
-                        <th>工程效果</th>
+                        <th>業主平均分攤 (進位至萬)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>方案 1 (基本)</strong></td>
+                        <td><strong>方案 1 (陪跑)</strong></td>
                         <td>$2,894 萬</td>
                         <td>約 $2,100 萬</td>
-                        <td class="highlight">不洗牆不上漆 ★</td>
+                        <td class="highlight">約 $5 萬</td>
                     </tr>
                     <tr>
                         <td><strong>方案 2 (全面)</strong></td>
                         <td>$4,770 萬</td>
                         <td>約 $3,900 萬</td>
-                        <td class="highlight">天價負擔 ★★★</td>
+                        <td class="highlight">約 $9 萬</td>
                     </tr>
                     <tr>
                         <td><strong>方案 3 (提升)</strong></td>
                         <td>$5,147 萬</td>
                         <td>約 $4,300 萬</td>
-                        <td class="highlight">極度不合理 ★★★★★</td>
+                        <td class="highlight">約 $10 萬</td>
                     </tr>
                 </tbody>
             </table>
@@ -344,13 +308,13 @@
         <div class="card" style="background-color: #fff9f9; border: 2px solid var(--primary);">
             <h2 style="color: var(--primary); border-bottom-color: var(--primary);">🛑 我們的立場：三個方案，全數否決！</h2>
             <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">相信各位業主都有獨立思考能力！三個方案全部都不好，請全部投【反對票】！</p>
-            <p>只有全數否決這三個不合理方案，才能逼使法團與物管重新檢討，改為提出真正合理、省錢、高效的「精準局部維修 / 吊船維修」方案！</p>
+            <p>只有全數否決這三個不合理方案，才能逼使法團與物管重新檢討，改為提出真正合理、省錢、高效的「按需局部修復」方案！</p>
         </div>
 
         <!-- 行動指南 -->
         <div class="card">
             <h2>🗳️ 告急！我們最少需要 60 戶/業權份數投反對票</h2>
-            <p>漏水戶（約40戶）極大機會投贊成票以求有人夾錢。我們必須集結至少 60 戶（或靠大單位業權份數）投下反對票，才能成功護盤！</p>
+            <p>漏水戶（約 40 戶）極大機會投贊成票以求有人夾錢。我們必須集結至少 60 戶（或靠大單位業權份數）投下反對票，才能成功護盤！</p>
 
             <div class="action-box">
                 <strong>業主現在需要做的事：</strong>
@@ -365,7 +329,7 @@
 
     <!-- 底部固定按鈕 -->
     <div class="sticky-footer">
-        <a href="https://wa.me/?text=🚨%20天賦海灣1期業主注意！過往欠薪堵路新聞曝光！9.15%20EGM%20請全體業主投反對票！真相詳情：%20" class="btn btn-whatsapp" target="_blank">轉發 WhatsApp</a>
+        <a href="https://wa.me/?text=🚨%20天賦海灣1期業主注意！2,900萬居然只係陪跑方案？9.15%20EGM%20請全體業主投反對票！估價單真相：%20" class="btn btn-whatsapp" target="_blank">轉發 WhatsApp</a>
         <a href="https://drive.google.com/file/d/1ay8J7dG-Myw5RgGYlTmW2-gLx0sQJNNz/view?usp=drivesdk" class="btn btn-danger" target="_blank">查看官方估價單 PDF</a>
     </div>
 
